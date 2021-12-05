@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Mothership Defender 2
+Icon=de.Nalsai.MothershipDefender2
+Exec=mothershipdefender2 %U
+Categories=Game;

@@ -1,0 +1,40 @@
+app-id: de.Nalsai.MothershipDefender2
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+command: mothershipdefender2
+branch: stable
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --share=network
+  - --device=dri
+modules:
+  - name: MD2-Files
+    buildsystem: simple
+    build-commands:
+      - cp -R . /app/game
+    sources:
+      - type: archive
+        url: https://github.com/Nalsai/MothershipDefender2/releases/download/v2.3.1/MothershipDefender2_v2.3.1.tar.xz
+        sha256: 96a6c332a61106f033f89e0a0688fffbc988ca6ec7c1af1bcd99b96aa2c72600
+  - name: MD2-Shortcut
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 launch.sh /app/bin/mothershipdefender2
+      - install -Dm644 de.Nalsai.MothershipDefender2.appdata.xml /app/share/appdata/de.Nalsai.MothershipDefender2.appdata.xml
+      - install -Dm644 de.Nalsai.MothershipDefender2.desktop /app/share/applications/de.Nalsai.MothershipDefender2.desktop
+      - install -Dm644 de.Nalsai.MothershipDefender2.png /app/share/icons/hicolor/512x512/apps/de.Nalsai.MothershipDefender2.png
+    sources:
+      - type: script
+        dest-filename: launch.sh
+        commands:
+          - /app/game/MothershipDefender2.x86_64
+      - type: file
+        path: de.Nalsai.MothershipDefender2.appdata.xml
+      - type: file
+        path: de.Nalsai.MothershipDefender2.desktop
+      - type: file
+        path: de.Nalsai.MothershipDefender2.png
