@@ -2,9 +2,9 @@
 <component type="desktop-application">
 	<id>de.Nalsai.MothershipDefender2</id>
 	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>Proprietary</project_license>
+	<project_license>GPL-3.0+</project_license>
 	<name>Mothership Defender 2</name>
-	<summary>A remake of the first Mothership Defender in Unity for Windows, Android and the browser.</summary>
+	<summary>A remake of the first Mothership Defender in Unity for Linux, Windows, Android and the browser.</summary>
 	<description>
 		<p>[Description here]</p>
 	</description>
@@ -14,17 +14,17 @@
 	<launchable type="desktop-id">de.Nalsai.MothershipDefender2.desktop</launchable>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">https://en.nalsai.de/mothershipdefender2/img/promotional.jpg</image>
+			<image type="source">https://nalsai.de/mothershipdefender2/img/promotional.png</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://en.nalsai.de/mothershipdefender2/img/play.jpg</image>
+			<image type="source">https://nalsai.de/mothershipdefender2/img/play.png</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">https://en.nalsai.de/mothershipdefender2/img/screenshot.jpg</image>
+			<image type="source">https://nalsai.de/mothershipdefender2/img/screenshot.png</image>
 		</screenshot>
 	</screenshots>
 	<releases>
-		<release version="0.5" date="2021-11-21">
+		<release version="2.3.1" date="2021-11-21">
 			<description>
 				<p>First release as a Flatpak for Linux!</p>
 			</description>
