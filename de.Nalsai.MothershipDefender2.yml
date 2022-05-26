@@ -3,7 +3,7 @@ runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: mothershipdefender2
-branch: stable
+default-branch: stable
 finish-args:
   - --share=ipc
   - --socket=x11
