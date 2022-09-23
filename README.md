@@ -7,7 +7,7 @@
 I'm hosting this Flatpak on my own Flatpak Repo. You can install it from there like this:
 
 ```bash
-flatpak install https://flatpak.nils.moe/de.Nalsai.MothershipDefender2.flatpakref
+flatpak install https://flatpak.nils.moe/repo/appstream/de.Nalsai.MothershipDefender2.flatpakref
 ```
 
 ## Building
