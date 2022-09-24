@@ -21,6 +21,7 @@ jobs:
           bundle:  de.Nalsai.MothershipDefender2.flatpak
           manifest-path: de.Nalsai.MothershipDefender2.yml
           cache-key: flatpak-builder-${{ github.sha }}
+          branch: stable
       - name: Deploy
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
         with:
