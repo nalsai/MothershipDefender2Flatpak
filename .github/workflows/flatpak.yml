@@ -1,0 +1,30 @@
+name: 📦 Build Flatpak
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  flatpak:
+    name: build-flatpak
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:freedesktop-21.08
+      options: --privileged
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Build Flatpak
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
+        with:
+          bundle:  de.Nalsai.MothershipDefender2.flatpak
+          manifest-path: de.Nalsai.MothershipDefender2.yml
+          cache-key: flatpak-builder-${{ github.sha }}
+      - name: Deploy
+        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
+        with:
+          repository: ""
+          flat-manager-url: https://flatpak.hachiman.nils.moe
+          token: ${{ secrets.FLATMAN_TOKEN }}
+
