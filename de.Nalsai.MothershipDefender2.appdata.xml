@@ -27,8 +27,9 @@
 	<url type="bugtracker">https://github.com/Nalsai/MothershipDefender2/issues</url>
 	<developer_name>Nalsai</developer_name>
 	<update_contact>contact@nalsai.de</update_contact>
-  	<content_rating type="oars-1.1" />
+  	<content_rating type="oars-1.1"/>
 	<releases>
+		<release version="v2.3.1" date="2021-12-06"/>
 		<release version="2.3.1" date="2021-11-21">
 			<description>
 				<p>First release as a Flatpak for Linux!</p>
