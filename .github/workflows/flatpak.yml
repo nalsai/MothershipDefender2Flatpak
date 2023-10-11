@@ -10,13 +10,13 @@ jobs:
     name: build-flatpak
     runs-on: ubuntu-latest
     container:
-      image: bilelmoussaoui/flatpak-github-actions:freedesktop-21.08
+      image: bilelmoussaoui/flatpak-github-actions:freedesktop-22.08
       options: --privileged
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Build Flatpak
-        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle:  de.Nalsai.MothershipDefender2.flatpak
           manifest-path: de.Nalsai.MothershipDefender2.yml
@@ -24,7 +24,7 @@ jobs:
           branch: stable
       - name: Deploy
         if: github.event_name != 'pull_request'
-        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
+        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v4
         with:
           repository: ""
           flat-manager-url: https://flatpak.hachiman.nils.moe
