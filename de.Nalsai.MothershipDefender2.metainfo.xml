@@ -29,6 +29,9 @@
 	<update_contact>contact@nalsai.de</update_contact>
 	<content_rating type="oars-1.1"/>
 	<releases>
+		<release version="v2.3.2" date="2024-06-07">
+			<description></description>
+		</release>
 		<release version="v2.3.1" date="2021-11-21">
 			<description>
 				<p>First release as a Flatpak for Linux!</p>
