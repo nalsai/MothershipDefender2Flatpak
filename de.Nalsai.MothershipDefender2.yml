@@ -1,6 +1,6 @@
 app-id: de.Nalsai.MothershipDefender2
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: mothershipdefender2
 default-branch: stable
