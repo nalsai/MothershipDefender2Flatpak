@@ -22,8 +22,8 @@ modules:
       - install -Dm644 de.Nalsai.MothershipDefender2.png /app/share/icons/hicolor/512x512/apps/de.Nalsai.MothershipDefender2.png
     sources:
       - type: archive
-        url: https://github.com/nalsai/MothershipDefender2/releases/download/v2.3.3/MothershipDefender2.tar.xz
-        sha256: 2fd74f77b242bfedbf90b19ad17afab7202d18b50d9fc4a8271b4dbeee6f79a9
+        url: https://github.com/nalsai/MothershipDefender2/releases/download/v2.3.4/MothershipDefender2.tar.xz
+        sha256: 1e996642df8048cc50850b3e56b27320e50e7d216863ed9fd93b81abfd958dac
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Nalsai/MothershipDefender2/releases/latest
