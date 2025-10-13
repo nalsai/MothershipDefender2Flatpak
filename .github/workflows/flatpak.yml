@@ -27,6 +27,6 @@ jobs:
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v4
         with:
           repository: ""
-          flat-manager-url: https://flatpak.hachiman.nils.moe
+          flat-manager-url: https://flatpak.alya.nils.moe
           token: ${{ secrets.FLATMAN_TOKEN }}
 
